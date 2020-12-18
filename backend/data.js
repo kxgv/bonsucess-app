@@ -1,4 +1,23 @@
+import { model } from "mongoose";
+
 const data = {
+
+    users: [
+      {
+        namne:'Kevin',
+        email:'kevlee@test.com',
+        password: bcrypt.hashSync('1234',8),
+        isAdmin: true,
+      }, 
+
+      {
+        namne:'Keff',
+        email:'kefflee@test.com',
+        password: bcrypt.hashSync('1234',8),
+        isAdmin: true,
+      }
+    ],
+
     products: [
       {
         _id: '1',
