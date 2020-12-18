@@ -3,6 +3,7 @@ import { Product } from '../components/Product';
 import data from '../data';
 
 /** 
+ * Callback a <Product> component 
  * Returns a list of products 
  * @param {Object[]} product - The products items 
  * @returns {Product}  products objects inside a row center 

@@ -1,5 +1,11 @@
 import { model } from "mongoose";
 
+/**
+ * @typedef {User}
+ * @typedef {Product}
+ * @typedef {Data}
+ */
+
 const data = {
 
     users: [

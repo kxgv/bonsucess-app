@@ -1,13 +1,16 @@
 import React from 'react';
 
 /**
- * @typedef {Object} Product 
- * @param {product} product._id id product
- * @returns {product} in a card   
+ * Product is a component that returns a card with product inside 
+ * @typedef {Component} Product 
+ * @property {string} _id - Product ID 
+ * @property {string} image - Product image 
+ * @property {string} name - Product name 
+ * @property {string} price - Product price
 */
 
 export function Product(props) {
-  const { product } = props;
+  const { product } = props; // to access product properties like id, name, image 
   return (
     <div key={product._id} className="card">
       <a href={`/product/${product._id}`}>
