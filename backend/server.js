@@ -2,8 +2,18 @@ import express from 'express';
 import mongoose from 'mongoose'; 
 import data from './data.js';
 
+/**
+ * Server module - See {@tutorial node-server-tutorial.html}
+ * @module server
+ * @param {string} uri - URL 
+ * @param {boolean} useNewUrlParser - connect option
+ * @param {boolean} userUnifiedTopology - connect option
+ * @param {boolean} userCreateIndex - connect option
+ * @returns {Connection} Mongoose default connection to MongoDB  
+ */
 
 const app = express();
+
 mongoose.connect('mongodb://localhost/bonsucess', {
   useNewUrlParser: true,
   userUnifiedTopology: true, 

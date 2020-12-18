@@ -4,6 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+/**
+ * @file index.js is the root file for this app
+ * @author KevinLee
+ */
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

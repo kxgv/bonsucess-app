@@ -1,8 +1,8 @@
 {
     "source": {
-      "include": ["./frontend/src/"],
+      "include": ["./frontend/src/", "./backend/server.js"],
       "includePattern": ".js$",
-      "excludePattern": "(node_modules/|docs)"
+      "excludePattern": "(node_modules/|docs|backend/routers)"
     },
     "plugins": ["plugins/markdown"],
     "templates": {
@@ -11,7 +11,7 @@
     },
     "opts": {
       "recurse": true,
-      "destination": "./docs/"
+      "destination": "./docs/",
+      "tutorials": "./tutorials"
     }
   }
-  
