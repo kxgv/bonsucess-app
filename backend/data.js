@@ -1,19 +1,15 @@
-import bcrypt from 'bcrypt.js'; 
-
 const data = {
 
     users: [
       {
         namne:'Kevin',
         email:'kevlee@test.com',
-        password: bcrypt.hashSync('1234',8),
         isAdmin: true,
       }, 
 
       {
         namne:'Keff',
         email:'kefflee@test.com',
-        password: bcrypt.hashSync('1234',8),
         isAdmin: true,
       }
     ],
@@ -28,6 +24,7 @@ const data = {
         brand: 'Nike',
         rating: 4.5,
         numReviews: 10,
+        countInStock: 15,
         description: 'high quality product',
       },
       {
@@ -39,6 +36,7 @@ const data = {
         brand: 'Adidas',
         rating: 4.0,
         numReviews: 10,
+        countInStock: 15,
         description: 'high quality product',
       },
       {
@@ -50,6 +48,7 @@ const data = {
         brand: 'Lacoste',
         rating: 4.8,
         numReviews: 17,
+        countInStock: 15,
         description: 'high quality product',
       },
       {
@@ -61,6 +60,7 @@ const data = {
         brand: 'Nike',
         rating: 4.5,
         numReviews: 14,
+        countInStock: 15,
         description: 'high quality product',
       },
       {
@@ -72,6 +72,7 @@ const data = {
         brand: 'Puma',
         rating: 4.5,
         numReviews: 10,
+        countInStock: 15,
         description: 'high quality product',
       },
       {
@@ -83,6 +84,7 @@ const data = {
         brand: 'Adidas',
         rating: 4.5,
         numReviews: 15,
+        countInStock: 15,
         description: 'high quality product',
       },
     ],

@@ -14,18 +14,19 @@ import data from './data.js';
 
 const app = express();
 
-mongoose.connect('mongodb://localhost/bonsucess', {
+/**
+ * mongoose.connect('mongodb://localhost/bonsucess', {
   useNewUrlParser: true,
   userUnifiedTopology: true, 
   userCreateIndex: true,
 });
+ */
 
 app.get('/api/products', (req, res) => {
   res.send(data.products);
 });
 
-app.use('/api/users', userRouter); 
-
+//app.use('/api/users', userRouter); 
 
 app.get('/', (req, res) => {
   res.send('Server is ready');

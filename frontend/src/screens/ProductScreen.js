@@ -11,7 +11,7 @@ import data from '..//data';
 export default function ProductScreen(props) {
   const product = data.products.find((x) => x._id === props.match.params.id);
   if (!product) {
-    return <div> Product Not Found</div>;
+    return <div> Producto no encontrado</div>;
   }
   return (
     <div>
@@ -25,9 +25,9 @@ export default function ProductScreen(props) {
             <li>
               <h1>{product.name}</h1>
             </li>
-            <li>Price: ${product.price}</li>
+            <li>Precio: {product.price}</li>
             <li>
-              Description:
+              Descripción:
               <p>{product.description}</p>
             </li>
           </ul>
@@ -43,18 +43,18 @@ export default function ProductScreen(props) {
               </li>
               <li>
                 <div className="row">
-                  <div>Status</div>
+                  <div>Estado</div>
                   <div>
                     {product.countInStock > 0 ? (
-                      <span className="success">In Stock</span>
+                      <span className="success">En Stock</span>
                     ) : (
-                      <span className="error">Unavailable</span>
+                      <span className="error">No disponible</span>
                     )}
                   </div>
                 </div>
               </li>
               <li>
-                <button className="primary block">Add to Cart</button>
+                <button className="primary block">Añadir a la cesta</button>
               </li>
             </ul>
           </div>

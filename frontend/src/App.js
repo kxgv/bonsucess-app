@@ -4,7 +4,7 @@ import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 
 /**
- * Returns a render HomeScreen
+ * Returns a render HomeScreen and can access to ProductScreen 
  * @function
  * @name App
  */
@@ -16,19 +16,19 @@ function App() {
         <header className="row">
           <div>
             <a className="brand" href="/">
-              amazona
+              Bonsucces
             </a>
           </div>
           <div>
-            <a href="/cart">Cart</a>
-            <a href="/signin">Sign In</a>
+            <a href="/cart">Cesta</a>
+            <a href="/signin">Iniciar sesión</a>
           </div>
         </header>
         <main>
           <Route path="/product/:id" component={ProductScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
-        <footer className="row center">All right reserved</footer>
+        <footer className="row center">Todos los derechos reservados</footer>
       </div>
     </BrowserRouter>
   );
