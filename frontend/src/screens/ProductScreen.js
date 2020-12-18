@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import data from '..//data';
 
+/**Returns a Screen for a Product
+ * @function
+ * @name ProductScreen
+ * @param {*} props - any property from Product Component
+ */
+
 export default function ProductScreen(props) {
   const product = data.products.find((x) => x._id === props.match.params.id);
   if (!product) {
@@ -19,7 +25,7 @@ export default function ProductScreen(props) {
             <li>
               <h1>{product.name}</h1>
             </li>
-            <li>Pirce : ${product.price}</li>
+            <li>Price: ${product.price}</li>
             <li>
               Description:
               <p>{product.description}</p>

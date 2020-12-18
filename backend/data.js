@@ -1,10 +1,4 @@
-import { model } from "mongoose";
-
-/**
- * @typedef {User}
- * @typedef {Product}
- * @typedef {Data}
- */
+import bcrypt from 'bcrypt.js'; 
 
 const data = {
 
