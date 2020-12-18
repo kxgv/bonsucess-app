@@ -1,6 +1,12 @@
 import React from 'react';
-import Product from '../components/Product';
+import { Product } from '../components/Product';
 import data from '../data';
+
+/** 
+ * Returns a list of products 
+ * @param {Object[]} product - The products items 
+ * @returns {Product}  products objects inside a row center 
+*/
 
 export default function HomeScreen() {
   return (

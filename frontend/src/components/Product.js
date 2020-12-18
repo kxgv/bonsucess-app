@@ -1,6 +1,12 @@
 import React from 'react';
 
-export default function Product(props) {
+/**
+ * @typedef {Object} Product 
+ * @param {product} product._id id product
+ * @returns {product} in a card   
+*/
+
+export function Product(props) {
   const { product } = props;
   return (
     <div key={product._id} className="card">
