@@ -5,7 +5,7 @@ import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';  
 
 /** 
- * Returns products inside row in Home Screen
+ * Load products from backend inside row in Home Screen
  * @function 
  * @name HomeScreen
 */
