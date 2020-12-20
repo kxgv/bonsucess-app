@@ -21,7 +21,7 @@ function App() {
         <header className="row">
           <div>
             <Link className="brand" to="/">
-              amazona
+              Bonsuccess
             </Link>
           </div>
           <div>
@@ -39,7 +39,7 @@ function App() {
           <Route path="/product/:id" component={ProductScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
-        <footer className="row center">All right reserved</footer>
+        <footer className="row center"></footer>
       </div>
     </BrowserRouter>
   );

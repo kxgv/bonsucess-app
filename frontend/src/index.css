@@ -27,7 +27,12 @@ body {
 }
 header {
   grid-area: header;
-  background-color: #203040;
+  background: rgb(215,224,6);
+  background: -moz-linear-gradient(90deg, rgba(215,224,6,1) 0%, rgba(13,153,7,1) 21%, rgba(16,219,221,1) 47%, rgba(93,11,177,1) 73%, rgba(198,3,3,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(215,224,6,1) 0%, rgba(13,153,7,1) 21%, rgba(16,219,221,1) 47%, rgba(93,11,177,1) 73%, rgba(198,3,3,1) 100%);
+  background: linear-gradient(90deg, rgba(215,224,6,1) 0%, rgba(13,153,7,1) 21%, rgba(16,219,221,1) 47%, rgba(93,11,177,1) 73%, rgba(198,3,3,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d7e006",endColorstr="#c60303",GradientType=1);
+
 }
 main {
   grid-area: main;
@@ -35,8 +40,12 @@ main {
 }
 footer {
   grid-area: footer;
-  background-color: #203040;
   color: #ffffff;
+  background: rgb(215,224,6);
+  background: -moz-linear-gradient(90deg, rgba(215,224,6,1) 0%, rgba(13,153,7,1) 21%, rgba(16,219,221,1) 47%, rgba(93,11,177,1) 73%, rgba(198,3,3,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(215,224,6,1) 0%, rgba(13,153,7,1) 21%, rgba(16,219,221,1) 47%, rgba(93,11,177,1) 73%, rgba(198,3,3,1) 100%);
+  background: linear-gradient(90deg, rgba(215,224,6,1) 0%, rgba(13,153,7,1) 21%, rgba(16,219,221,1) 47%, rgba(93,11,177,1) 73%, rgba(198,3,3,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d7e006",endColorstr="#c60303",GradientType=1);
 }
 /* Common */
 h1 {
@@ -85,7 +94,12 @@ button:hover {
   border: 0.1rem #404040 solid;
 }
 button.primary {
-  background-color: #f0c040;
+  color:#e0e0ff; 
+  background: rgb(63,94,251);
+  background: -moz-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#fc466b",GradientType=1);
 }
 button.block {
   width: 100%;
