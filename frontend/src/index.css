@@ -100,6 +100,8 @@ button.primary {
   background: -webkit-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#fc466b",GradientType=1);
+  animation: pulse; 
+  animation-duration: 2s;
 }
 button.block {
   width: 100%;
@@ -109,6 +111,7 @@ header a {
   color: #ffffff;
   padding: 1rem;
 }
+
 a.brand {
   color: #ffffff;
   font-size: 3rem;
