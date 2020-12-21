@@ -7,6 +7,14 @@ const {
     PRODUCT_DETAILS_FAIL,
 } = require('../constants/productConstants');
 
+/**
+ * @function
+ * @name productListReducer
+ * @param {*} state - the state of the Reducer
+ * @param {*} action - can be a differents TYPES of action
+ * @description get a STATE and make a change in the STATE return a new STATE
+ */
+
 export const productListReducer = (state = { loading: true, products: [] },
     action
 ) => {

@@ -12,6 +12,11 @@ export default function ProductScreen(props) {
   const productDetails = useSelector((state) => state.productDetails);
   const { loading, error, product } = productDetails;
 
+  /**
+   * @function
+   * @name useEffect
+   * @description after each update, renders PRODUCT component in PRODUCT DETAILS SCREEN  
+   */
   useEffect(() => {
     dispatch(detailsProduct(productId));
   }, [dispatch, productId]);

@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import data from './data.js';
 
 /**
- * Server module - See {@tutorial node-server-tutorial.html}
+ * Server module - See {@tutorial NodeServerTutorial}
  * @module server
  * @param {string} uri - URL 
  * @param {boolean} useNewUrlParser - connect option
