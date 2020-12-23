@@ -4,7 +4,7 @@ import { BrowserRouter, Link, Route } from 'react-router-dom';
 import CartScreen from './screens/CartScreen';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
-import Filter from './components/Filter'; 
+
 
 /**
  * Returns a render HomeScreen and can access to ProductScreen 
