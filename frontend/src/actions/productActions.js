@@ -6,6 +6,9 @@ import {
   PRODUCT_LIST_FAIL,
   PRODUCT_LIST_REQUEST,
   PRODUCT_LIST_SUCCESS,
+  PRODUCT_CATEGORY_LIST_REQUEST,
+  PRODUCT_CATEGORY_LIST_SUCCESS,
+  PRODUCT_CATEGORY_LIST_FAIL,
 } from '../constants/productConstants';
 
 /**
@@ -26,12 +29,14 @@ import {
  * @returns an action
  */
 export const listProducts = () => async (dispatch) => {
+  
   /**
    * @function
    * @name dispatch
    * @param {object} - has a TYPE string with action and PAYLOAD to inject data in begin/end action
    * @description change the state of the redux to show async products
    */
+
   dispatch({
     type: PRODUCT_LIST_REQUEST,
   });
@@ -54,6 +59,18 @@ export const listProducts = () => async (dispatch) => {
  * @description action to list async product details
  * @returns an action
  */
+
+export const listProductCategories = () => async (dispatch) => {
+  dispatch({
+    type: PRODUCT_CATEGORY_LIST_REQUEST,
+  });
+  try {
+    const { data } = await Axios.get(`/api/products/categories`);
+    dispatch({ type: PRODUCT_CATEGORY_LIST_SUCCESS, payload: data });
+  } catch (error) {
+    dispatch({ type: PRODUCT_CATEGORY_LIST_FAIL, payload: error.message });
+  }
+};
 
 export const detailsProduct = (productId) => async (dispatch) => {
   dispatch({ type: PRODUCT_DETAILS_REQUEST, payload: productId });
